@@ -5,7 +5,9 @@ class PostImage < ApplicationRecord
   has_many :post_comments, dependent: :destroy
   has_many :goods, dependent: :destroy
   
-  validaes :image, presence: true
+  validates :image, presence: true
+  validates :animal_name, presence: true
+  validates :caption, presence: true
   
   
   def get_image
