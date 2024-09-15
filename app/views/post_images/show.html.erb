@@ -1,5 +1,5 @@
 <div>
-  <%= image_tag @post_image.get_image %>
+  <%= image_tag @post_image.get_image(600,500) %>
   <p>動物名: <%= @post_image.animal_name %></p>
   <p>説明: <%= @post_image.caption %></p>
   <p>投稿ユーザー画像: <%= image_tag @post_image.user.get_profile_image(100,100) %></p>
